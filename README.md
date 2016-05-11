@@ -2,8 +2,8 @@
 Mobilna aplikacija sa informacijama o datumima sjetve, sadnje i branja te podsjetnicima istih.
 
 ### Autori
-- ** **	( )
-- ** **	( )
+- ** ? **	( )
+- ** ? **	( )
 
 ### Organizacija
 Sveučilište Jurja Dobrile u Puli  
