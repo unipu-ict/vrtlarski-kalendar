@@ -2,7 +2,7 @@
 Mobilna aplikacija sa informacijama o datumima sjetve, sadnje i branja te podsjetnicima istih.
 
 ### Autori
-- **Prižmić Kristija** (kprizm@unipu.hr)
+- **Prižmić Kristijan** (kprizm@unipu.hr)
 - **Bajrić	Ida**	(ibajric@unipu.hr)
 - **Dasko	Nino**	(ndasko@unipu.hr)
 - **Petrić	Mia**	(mipetric@unipu.hr)
