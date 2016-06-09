@@ -17,4 +17,14 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(MainActivity.this, PopisBiljakaActivity.class);
         startActivity(i);
     }
+
+    public void moj_vrt(View view) {
+        Intent i = new Intent(MainActivity.this, VrtActivity.class);
+        startActivity(i);
+    }
+
+    public void kalendar(View view) {
+        Intent i = new Intent(MainActivity.this, KalendarActivity.class);
+        startActivity(i);
+    }
 }

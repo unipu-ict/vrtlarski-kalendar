@@ -15,7 +15,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PopisBiljakaActivity" android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".PopisBiljakaActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".VrtActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".KalendarActivity"
+            android:parentActivityName=".MainActivity"/>
     </application>
 
 </manifest>
