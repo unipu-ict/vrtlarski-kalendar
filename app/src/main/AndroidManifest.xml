@@ -23,7 +23,10 @@
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".KalendarActivity"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".BiljkaDetaljActivity"
+            android:parentActivityName=".PopisBiljakaActivity" />
     </application>
 
 </manifest>
