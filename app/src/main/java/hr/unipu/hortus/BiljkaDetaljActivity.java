@@ -19,5 +19,14 @@ public class BiljkaDetaljActivity extends AppCompatActivity {
 
         TextView ime_tekst = (TextView) findViewById(R.id.ime_biljke);
         ime_tekst.setText(odabrana_biljka.getIme());
+
+        TextView opis_tekst = (TextView) findViewById(R.id.opis_biljke);
+        opis_tekst.setText(odabrana_biljka.getOpis());
+
+        TextView sjetva_tekst = (TextView) findViewById(R.id.mjesec_sjetve);
+        sjetva_tekst.append(String.valueOf(odabrana_biljka.getMjesec_sadnje()));
+
+        TextView berba_tekst = (TextView) findViewById(R.id.mjesec_berbe);
+        berba_tekst.append(String.valueOf(odabrana_biljka.getMjesec_berbe()));
     }
 }

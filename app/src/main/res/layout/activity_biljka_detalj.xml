@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:textSize="18sp"
         android:layout_below="@+id/opis_biljke"
-        android:text="Mjesec sjetve:"
+        android:text="Mjesec sjetve/sadnje: "
         android:id="@+id/mjesec_sjetve"
         android:layout_marginBottom="15dp"
         />
@@ -53,7 +53,7 @@
         android:layout_height="wrap_content"
         android:textSize="18sp"
         android:layout_below="@+id/mjesec_sjetve"
-        android:text="Mjesec berbe:"
+        android:text="Mjesec berbe: "
         android:id="@+id/mjesec_berbe"
         />
 </RelativeLayout>
