@@ -4,19 +4,19 @@ package hr.unipu.hortus;
 public class Biljka {
     String ime;
     String opis;
-    boolean otvoreno;
-    int mjesec_sadnje;
-    int mjesec_berbe;
+    int[] mjeseci_sadnje;
+    int[] mjeseci_berbe;
+    String slika;
 
     public Biljka() {
     }
 
-    public Biljka(String ime, String opis, boolean otvoreno, int mjesec_sadnje, int mjesec_berbe) {
+    public Biljka(String ime, String opis, int[] mjeseci_sadnje, int[] mjeseci_berbe, String slika) {
         this.ime = ime;
         this.opis = opis;
-        this.otvoreno = otvoreno;
-        this.mjesec_sadnje = mjesec_sadnje;
-        this.mjesec_berbe = mjesec_berbe;
+        this.mjeseci_sadnje = mjeseci_sadnje;
+        this.mjeseci_berbe = mjeseci_berbe;
+        this.slika = slika;
     }
 
     public String getIme() {
@@ -35,28 +35,40 @@ public class Biljka {
         this.opis = opis;
     }
 
-    public int getMjesec_sadnje() {
-        return mjesec_sadnje;
+    public String getMjeseci_sadnje() {
+        StringBuilder builder = new StringBuilder();
+        for (int mjesec:  mjeseci_sadnje) {
+            builder.append(mjesec);
+            builder.append(" ");
+        }
+
+        return builder.toString();
     }
 
-    public void setMjesec_sadnje(int mjesec_sadnje) {
-        this.mjesec_sadnje = mjesec_sadnje;
+    public void setMjeseci_sadnje(int[] mjeseci_sadnje) {
+        this.mjeseci_sadnje = mjeseci_sadnje;
     }
 
-    public int getMjesec_berbe() {
-        return mjesec_berbe;
+    public String getMjeseci_berbe() {
+        StringBuilder builder = new StringBuilder();
+        for (int mjesec:  mjeseci_berbe) {
+            builder.append(mjesec);
+            builder.append(" ");
+        }
+
+        return builder.toString();
     }
 
-    public void setMjesec_berbe(int mjesec_berbe) {
-        this.mjesec_berbe = mjesec_berbe;
+    public void setMjeseci_berbe(int[] mjeseci_berbe) {
+        this.mjeseci_berbe = mjeseci_berbe;
     }
 
-    public boolean isOtvoreno() {
-        return otvoreno;
+    public String getSlika() {
+        return slika;
     }
 
-    public void setOtvoreno(boolean otvoreno) {
-        this.otvoreno = otvoreno;
+    public void setSlika(String slika) {
+        this.slika = slika;
     }
 
     @Override

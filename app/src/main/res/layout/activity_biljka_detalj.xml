@@ -10,51 +10,60 @@
     tools:context="hr.unipu.hortus.BiljkaDetaljActivity"
     android:background="#e4f9d8">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Ime biljke"
-        android:id="@+id/ime_biljke"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/ime_biljke"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
-        android:id="@+id/slika_biljke"
-        />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Ime biljke"
+                android:id="@+id/ime_biljke"
+                android:layout_gravity="center"
+                />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:layout_below="@+id/slika_biljke"
-        android:text="Opis biljke ide ovdje, vjerojatno i kroz više redova"
-        android:id="@+id/opis_biljke"
-        android:layout_marginBottom="15dp"
-        />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/slika_biljke"
+                />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:layout_below="@+id/opis_biljke"
-        android:text="Mjesec sjetve/sadnje: "
-        android:id="@+id/mjesec_sjetve"
-        android:layout_marginBottom="15dp"
-        />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Opis biljke ide ovdje, vjerojatno i kroz više redova"
+                android:id="@+id/opis_biljke"
+                android:layout_marginBottom="15dp"
+                />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:layout_below="@+id/mjesec_sjetve"
-        android:text="Mjesec berbe: "
-        android:id="@+id/mjesec_berbe"
-        />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+
+                android:text="Mjeseci sjetve/sadnje: "
+                android:id="@+id/mjesec_sjetve"
+                android:layout_marginBottom="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+
+                android:text="Mjeseci berbe: "
+                android:id="@+id/mjesec_berbe"
+                />
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>
