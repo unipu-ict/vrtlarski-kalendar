@@ -16,28 +16,32 @@
         android:layout_height="wrap_content"
         android:text="Hortus - vrtlarski kalendar"
         android:textSize="25sp"
-        android:textStyle="bold"
         android:textColor="@android:color/holo_green_dark"
         android:layout_gravity="center"
         android:layout_marginBottom="20dp"
-        />
+        android:textIsSelectable="false"
+        android:textStyle="bold" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="popis_biljaka"
         android:text="Biljke"
-        android:background="#2d721e" />
+        android:background="#2d721e"
+        android:backgroundTint="#2d721e"
+        android:textColor="#fcfafa" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Moj vrt"
         android:onClick="moj_vrt"
-        android:background="#2d721e" />
+        android:background="#2d721e"
+        android:textColor="#ffffff" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Kalendar"
         android:onClick="kalendar"
-        android:background="#2d721e" />
+        android:background="#2d721e"
+        android:textColor="#fdfcfc" />
 </LinearLayout>
