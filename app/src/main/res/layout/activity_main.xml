@@ -8,7 +8,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="hr.unipu.hortus.MainActivity">
+    tools:context="hr.unipu.hortus.MainActivity"
+    android:background="#e4f9d8">
 
     <TextView
         android:layout_width="wrap_content"
@@ -26,17 +27,17 @@
         android:layout_height="wrap_content"
         android:onClick="popis_biljaka"
         android:text="Biljke"
-        />
+        android:background="#2d721e" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Moj vrt"
         android:onClick="moj_vrt"
-        />
+        android:background="#2d721e" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Kalendar"
         android:onClick="kalendar"
-        />
+        android:background="#2d721e" />
 </LinearLayout>
