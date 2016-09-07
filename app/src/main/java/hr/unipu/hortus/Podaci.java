@@ -10,6 +10,41 @@ public class Podaci {
     public static List<Biljka> dajPodatke() {
         return podaci;
     }
+    public static List<Biljka> dajBiljkeKojeSeSiju(int mjesec) {
+        List<Biljka> biljke = new ArrayList<>();
+        //za svaku biljku...
+        for (Biljka biljka:podaci) {
+            //...i svaki njen mogući mjesec sadnje...
+            for(int mjesecSadnje:biljka.getMjeseciSadnjeArray()) {
+                //...usporedi odgovara li traženom mjesecu...
+                if(mjesecSadnje==mjesec) {
+                    //...i ako da, dodaj tu biljku na popis i prekini gledati mjesece te biljke
+                    biljke.add(biljka);
+                    break;
+                }
+            }
+        }
+
+        return biljke;
+    }
+    public static List<Biljka> dajBiljkeKojeSeBeru(int mjesec) {
+        List<Biljka> biljke = new ArrayList<>();
+        //za svaku biljku...
+        for (Biljka biljka:podaci) {
+            //...i svaki njen mogući mjesec berbe...
+            for(int mjesecBerbe:biljka.getMjeseciBerbeArray()) {
+                //...usporedi odgovara li traženom mjesecu...
+                if(mjesecBerbe==mjesec) {
+                    //...i ako da, dodaj tu biljku na popis i prekini gledati mjesece te biljke
+                    biljke.add(biljka);
+                    break;
+                }
+            }
+        }
+
+        return biljke;
+    }
+
 
     static {
         // naziv, opis, mjeseci sadnje, mjeseci berbe, slika

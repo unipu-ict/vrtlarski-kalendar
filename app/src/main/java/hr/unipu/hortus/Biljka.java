@@ -63,6 +63,14 @@ public class Biljka {
         this.mjeseci_berbe = mjeseci_berbe;
     }
 
+    public int[] getMjeseciSadnjeArray() {
+        return mjeseci_sadnje;
+    }
+    public int[] getMjeseciBerbeArray() {
+        return mjeseci_berbe;
+    }
+
+
     public String getSlika() {
         return slika;
     }
