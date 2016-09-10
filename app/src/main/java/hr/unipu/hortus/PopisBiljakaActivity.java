@@ -22,9 +22,9 @@ public class PopisBiljakaActivity extends AppCompatActivity {
         List<Biljka> popis_biljaka= Podaci.dajPodatke();
 
 
-        ArrayAdapter<Biljka> biljkaArrayAdapter = new ArrayAdapter<Biljka>(this, android.R.layout.simple_list_item_1, popis_biljaka);
+//        ArrayAdapter<Biljka> biljkaArrayAdapter = new ArrayAdapter<Biljka>(this, android.R.layout.simple_list_item_1, popis_biljaka);
         ListView listView = (ListView) findViewById(R.id.biljke_listView);
-        listView.setAdapter(biljkaArrayAdapter);
+        listView.setAdapter(new BiljkaAdapter(this,0,popis_biljaka));
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

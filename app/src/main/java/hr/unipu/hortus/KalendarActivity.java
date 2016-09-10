@@ -57,7 +57,7 @@ public class KalendarActivity extends AppCompatActivity {
         biljkeKojeSeBeru = Podaci.dajBiljkeKojeSeBeru(mjesecId);
 
         //popuni grid popise biljkama koje se siju i beru za odabrani mjesec
-        gridSijeSe.setAdapter(new ArrayAdapter<Biljka>(this, android.R.layout.simple_list_item_1, biljkeKojeSeSiju));
-        gridBereSe.setAdapter(new ArrayAdapter<Biljka>(this, android.R.layout.simple_list_item_1, biljkeKojeSeBeru));
+        gridSijeSe.setAdapter(new BiljkaAdapter(this,0,biljkeKojeSeSiju));
+        gridBereSe.setAdapter(new BiljkaAdapter(this,0,biljkeKojeSeBeru));
     }
 }
