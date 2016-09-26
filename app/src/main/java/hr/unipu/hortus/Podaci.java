@@ -1,6 +1,9 @@
 package hr.unipu.hortus;
 
 
+import android.content.Context;
+import android.content.SharedPreferences;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -40,6 +43,16 @@ public class Podaci {
                     break;
                 }
             }
+        }
+
+        return biljke;
+    }
+    public static List<Biljka> dajVrt(Context context) {
+        SharedPreferences sharedPref = context.getSharedPreferences("vrt", Context.MODE_PRIVATE);
+        List<Biljka> biljke = new ArrayList<>();
+        for (Biljka biljka: podaci) {
+            if(sharedPref.getBoolean(biljka.getIme(),false)) biljke.add(biljka);
+
         }
 
         return biljke;
