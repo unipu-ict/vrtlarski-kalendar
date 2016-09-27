@@ -17,6 +17,6 @@ public class VrtActivity extends AppCompatActivity {
 
         biljke = Podaci.dajVrt(this);
         ListView listaVrt = (ListView) findViewById(R.id.listaVrt);
-        listaVrt.setAdapter(new BiljkaAdapter(this,0,biljke));
+        listaVrt.setAdapter(new BiljkaVrtAdapter(this,0,biljke));
     }
 }
