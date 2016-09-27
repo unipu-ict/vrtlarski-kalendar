@@ -28,6 +28,7 @@ public class BiljkaDetaljActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_biljka_detalj);
+        setTitle("Detalji biljke");
 
         List<Biljka> popis_biljaka = Podaci.dajPodatke();
 
