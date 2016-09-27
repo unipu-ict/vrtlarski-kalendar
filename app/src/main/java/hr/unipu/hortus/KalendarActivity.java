@@ -28,6 +28,7 @@ public class KalendarActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kalendar);
+        setTitle("Kalendar");
 
         Spinner spinner = (Spinner) findViewById(R.id.spinnerMjeseci);
         mjesecText = (TextView) findViewById(R.id.imeMjeseca);

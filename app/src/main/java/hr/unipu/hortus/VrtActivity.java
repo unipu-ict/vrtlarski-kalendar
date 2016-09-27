@@ -14,6 +14,7 @@ public class VrtActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vrt);
+        setTitle("Moj vrt");
 
         biljke = Podaci.dajVrt(this);
         ListView listaVrt = (ListView) findViewById(R.id.listaVrt);

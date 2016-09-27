@@ -17,12 +17,11 @@ public class PopisBiljakaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_popis_biljaka);
+        setTitle("Odabir biljke");
 
-        /*izvor: http://www.cipro.hr/kalendar-radova-vrt.htm#.V1vTsRyKS70 */
         List<Biljka> popis_biljaka= Podaci.dajPodatke();
 
 
-//        ArrayAdapter<Biljka> biljkaArrayAdapter = new ArrayAdapter<Biljka>(this, android.R.layout.simple_list_item_1, popis_biljaka);
         ListView listView = (ListView) findViewById(R.id.biljke_listView);
         listView.setAdapter(new BiljkaAdapter(this,0,popis_biljaka));
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
